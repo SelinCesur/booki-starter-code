@@ -86,28 +86,22 @@ header ul li a:hover {
 }
 
 /****** Main ***********/
-main h1 {
+main .titre h1 {
   font-size: 22px;
   font-weight: 700;
 
   margin-bottom: 8px;
 }
 
-main p {
+main .titre p {
   font-size: 16px;
   font-weight: 400;
 
   margin-top: 8px;
+  margin-bottom: 35px;
 }
 
 fieldset {
-  /* border: 1px #f2f2f2 solid;
-  border-radius: 25px;
-  background-color: #f2f2f2;
-
-  width: auto;
-  display: flex;*/
-
   border: none;
 
   padding: 0;
@@ -118,7 +112,7 @@ fieldset {
   justify-content: flex-start;
 }
 
-.logo {
+fieldset .logo {
   background-color: #f2f2f2;
   border-radius: 15px 0px 0px 16px;
   background-color: #f2f2f2;
@@ -162,6 +156,7 @@ fieldset {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-bottom: 35px;
 }
 
 .button-filtre {
@@ -174,6 +169,30 @@ fieldset {
 
   width: 173px;
   height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.button-filtre:hover {
+  background-color: #deebff;
+}
+
+.info-disponibilite {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.info-disponibilite .logo {
+  border: 1px #d9d9d9 solid;
+  border-radius: 25px;
+
+  padding: 7px 10px 7px 10px;
+
+  margin-right: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
