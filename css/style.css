@@ -404,7 +404,7 @@ td {
     flex-direction: column;
   }
 
-  .hebergements {
+  .hebergement {
     width: 100%;
   }
 
@@ -429,6 +429,23 @@ td {
 
   .populaires-cards .card-subtitle {
     font-size: 13px;
+  }
+
+  .activite-cards .card img {
+    height: 200px;
+  }
+
+  .activite-cards .card-title {
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 0;
+
+    height: 38px;
+  }
+
+  .activite-cards .card {
+    height: 270px;
   }
 }
 
