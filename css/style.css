@@ -362,6 +362,8 @@ fieldset .logo {
 .activite-cards .card {
   padding: 0;
   box-shadow: 0px 3px 15px 0px #0000001a;
+
+  height: 450px;
 }
 .activite-cards .card img {
   width: 100%;
@@ -379,26 +381,27 @@ fieldset .logo {
 /****** Footer ***********/
 footer {
   display: flex;
-}
-
-table {
   background-color: #f2f2f2;
-  text-align: left;
+
   width: 100%;
 }
 
-th {
-  font-size: 18px;
-
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 15px;
+footer ul {
+  width: 33%;
+  list-style-type: none;
 }
 
-td {
+footer ul li a {
   font-size: 16px;
-  padding-bottom: 15px;
-  padding-left: 20px;
+  font-weight: 400;
+}
+footer ul li {
+  padding-top: 15px;
+}
+
+footer ul li.titre {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -598,4 +601,10 @@ td {
   }
 
   /****** Footer ***********/
+  footer {
+    flex-direction: column;
+  }
+  footer ul {
+    width: 100%;
+  }
 }
