@@ -123,7 +123,8 @@ fieldset .logo {
   padding-bottom: 16px;
 }
 
-#recherche {
+#recherche,
+#recherche-input-mobile {
   border: 1px #f2f2f2 solid;
 
   font-size: 18px;
@@ -133,8 +134,13 @@ fieldset .logo {
   width: 195px;
 }
 
-#recherche:focus-visible {
+#recherche:focus-visible,
+#recherche-input-mobile:focus-visible {
   outline: 1px #f2f2f2 solid;
+}
+
+.recherche-mobile {
+  display: none;
 }
 
 .submit-mobile,
@@ -150,11 +156,6 @@ fieldset .logo {
 
   padding-left: 16px;
   padding-right: 16px;
-}
-
-.submit-mobile {
-  display: none;
-  border-radius: 15px 16px 15px 16px;
 }
 
 /****** Filtres  ***********/
@@ -520,9 +521,25 @@ footer ul li.titre {
   .info-disponibilite {
     padding-left: 20px;
   }
-  .submit-mobile {
-    display: inline;
+
+  .recherche-mobile {
+    display: flex;
+    align-items: stretch;
+
+    border: 1px #f2f2f2 solid;
+
+    border-radius: 0 16px 15px 0;
   }
+
+  .submit-mobile {
+    border-radius: 15px 16px 15px 16px;
+  }
+
+  #recherche-input-mobile {
+    border: none;
+  }
+
+  #recherche,
   .submit {
     display: none;
   }
